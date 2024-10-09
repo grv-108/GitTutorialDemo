@@ -1,0 +1,58 @@
+- what is git?
+- git is a version control system, which helps us to track our files.
+	- easy recover file.
+	- who and when introduce an issue in a file.
+	- roll back to previously working state.
+
+- queries
+	- git
+	- pwd (present working directory)
+	- git status
+	- git config --global user.name "name"
+	- git config --global user.email "email"
+	- git config --list	:  to show all of the different values assigned to a property.
+	- git config user.name : will show user's name
+	- git config user.email : will show user's email
+- git structure architecture.
+	- working directory
+	- staging area
+	- git directory
+- git init : to initialze a git directory
+- git add --a : to put all the files into the staging area
+- git commit -m "type the msg, what has been changed"
+- git log
+- rm -rf .git : to remove or delete the repository permanantly
+
+- cloning a remote git repository from github?
+	- git clone 'link_of_repo'
+	- press 'q' to exit 'git log'
+
+- file status lifecycle
+	- untracked, unmodified, modified, stage
+
+- .gitignore : ignore files in Git
+	- *.log : to ignore all .log files.
+
+- Git difference : showing changes b/w commits/staging area & working directory
+	- git diff : compare working directory with staging area 
+	- git diff --staged : compare last commit with staging area.
+
+- skipping the staging area
+	- git commit -a -m "direct commit"
+
+- moving and renaming files in Git
+	- git rm 'file_name' : this command will delete a file.
+	- git mv 'file_name' 'rename_file_name' : this command will rename a file.
+	- git rm --cached 'file_name'	: to stop git to track the file.
+
+- viewing and changing commits in Git
+	- git log -p : this will show the log and which files has been deleted or removed ( if : git log -p -n [where n is an integer or number] : this will show only n number of commits
+	- git log --stat : this will show the same but in short form.
+	- git log --pretty=oneline : this will show info. but in only one line
+	- git log --pretty=short : this will show info. but in only two line
+	- git log --pretty=full : this will show some info.
+	- git log --since=2.days/2.months/2.years
+	- git log --pretty=format:"%h -- %an" : this will show the log info. but in given format. here it'll show 'commit hash' -- 'author name'.
+	- git commit --amend : to change in someone's commit into the project.
+	- 
+	
