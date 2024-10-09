@@ -54,5 +54,10 @@
 	- git log --since=2.days/2.months/2.years
 	- git log --pretty=format:"%h -- %an" : this will show the log info. but in given format. here it'll show 'commit hash' -- 'author name'.
 	- git commit --amend : to change in someone's commit into the project.
-	- 
+
+- Unstaging & Unmodifying files in Git.
+	- git restore --staged "filename"	: To unstage an already staged file.
+	- git checkout --"filename" : To restore all the deleted content of the file, when the file was commited or staged.	- this works.
+	- git checkout -f 	: to loose all the changes that you've done in your files.
+	
 	
