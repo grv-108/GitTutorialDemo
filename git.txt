@@ -59,5 +59,8 @@
 	- git restore --staged "filename"	: To unstage an already staged file.
 	- git checkout --"filename" : To restore all the deleted content of the file, when the file was commited or staged.	- this works.
 	- git checkout -f 	: to loose all the changes that you've done in your files.
-	
+
+- Working with remote repo.
+	- git remote add origin https://github.com/grv-108/"repo_name".git
+	-
 	
